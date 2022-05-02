@@ -1,0 +1,136 @@
+2021-12-24 19:36:22.947  INFO 14116 --- [restartedMain] atialDataStorageSystemProjectApplication : Starting SpatialDataStorageSystemProjectApplication using Java 17 on DESKTOP-9KGPFUF with PID 14116 (F:\projects\Java\spatialDataStorageSystemProject\target\classes started by Artyom in F:\projects\Java\spatialDataStorageSystemProject)
+2021-12-24 19:36:22.951  INFO 14116 --- [restartedMain] atialDataStorageSystemProjectApplication : No active profile set, falling back to default profiles: default
+2021-12-24 19:36:23.075  INFO 14116 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-24 19:36:23.075  INFO 14116 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-24 19:36:23.648  INFO 14116 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-24 19:36:23.660  INFO 14116 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2021-12-24 19:36:24.257  INFO 14116 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-24 19:36:24.267  INFO 14116 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-24 19:36:24.267  INFO 14116 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-24 19:36:24.358  INFO 14116 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-24 19:36:24.358  INFO 14116 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1282 ms
+2021-12-24 19:36:24.725  INFO 14116 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-24 19:36:25.092  INFO 14116 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-24 19:36:26.109  INFO 14116 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-24 19:36:26.155  WARN 14116 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-24 19:36:26.460  INFO 14116 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-24 19:36:26.506  INFO 14116 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-24 19:36:26.514  INFO 14116 --- [restartedMain] atialDataStorageSystemProjectApplication : Started SpatialDataStorageSystemProjectApplication in 3.989 seconds (JVM running for 4.655)
+2021-12-24 19:37:35.045  INFO 14116 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-24 19:37:35.046  INFO 14116 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-24 19:37:35.047  INFO 14116 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-24 19:37:35.150  INFO 14116 --- [http-nio-8080-exec-1] c.e.s.MainController                     : 2021/12/24 19:36:26 Сохранить данные: точка, линия, полигон
+2021-12-24 19:37:36.480  INFO 14116 --- [http-nio-8080-exec-1] c.e.s.MainController                     : Fri Dec 24 19:36:26 YEKT 2021 - ОШИБКА: INSERT или UPDATE в таблице "geometry_objects" нарушает ограничение внешнего ключа "Foreign key from layers"
+  Подробности: Ключ (layer_id)=(3) отсутствует в таблице "layers".
+2021-12-24 19:37:36.481  INFO 14116 --- [http-nio-8080-exec-1] c.e.s.MainController                     : 2021/12/24 19:36:26 ОШИБКА: INSERT или UPDATE в таблице "geometry_objects" нарушает ограничение внешнего ключа "Foreign key from layers"
+  Подробности: Ключ (layer_id)=(3) отсутствует в таблице "layers".
+2021-12-24 19:37:45.951  INFO 14116 --- [http-nio-8080-exec-3] c.e.s.MainController                     : 2021/12/24 19:36:26 Получить перечень слоёв
+2021-12-24 19:37:46.024  INFO 14116 --- [http-nio-8080-exec-3] c.e.s.MainController                     : 2021/12/24 19:36:26 Получить перечень слоёв Перечень слоёв передан
+2021-12-24 19:37:53.126  INFO 14116 --- [http-nio-8080-exec-4] c.e.s.MainController                     : 2021/12/24 19:36:26 Сохранить данные: точка, линия, полигон
+2021-12-24 19:37:53.182  INFO 14116 --- [http-nio-8080-exec-4] c.e.s.MainController                     : 2021/12/24 19:36:26 Сохранить данные: точка, линия, полигон Объект сохранён
+2021-12-24 19:37:53.182  INFO 14116 --- [http-nio-8080-exec-4] c.e.s.MainController                     : %s
+2021-12-24 19:38:34.122  INFO 14116 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-24 19:38:34.129  INFO 14116 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-24 19:38:34.132  INFO 14116 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-24 19:38:38.342  INFO 9264 --- [restartedMain] atialDataStorageSystemProjectApplication : Starting SpatialDataStorageSystemProjectApplication using Java 17 on DESKTOP-9KGPFUF with PID 9264 (F:\projects\Java\spatialDataStorageSystemProject\target\classes started by Artyom in F:\projects\Java\spatialDataStorageSystemProject)
+2021-12-24 19:38:38.343  INFO 9264 --- [restartedMain] atialDataStorageSystemProjectApplication : No active profile set, falling back to default profiles: default
+2021-12-24 19:38:38.382  INFO 9264 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-24 19:38:38.382  INFO 9264 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-24 19:38:38.855  INFO 9264 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-24 19:38:38.866  INFO 9264 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2021-12-24 19:38:39.376  INFO 9264 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-24 19:38:39.386  INFO 9264 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-24 19:38:39.387  INFO 9264 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-24 19:38:39.471  INFO 9264 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-24 19:38:39.471  INFO 9264 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1089 ms
+2021-12-24 19:38:39.756  INFO 9264 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-24 19:38:39.920  INFO 9264 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-24 19:38:40.420  INFO 9264 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-24 19:38:40.462  WARN 9264 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-24 19:38:40.719  INFO 9264 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-24 19:38:40.756  INFO 9264 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-24 19:38:40.763  INFO 9264 --- [restartedMain] atialDataStorageSystemProjectApplication : Started SpatialDataStorageSystemProjectApplication in 2.765 seconds (JVM running for 3.176)
+2021-12-24 19:42:48.649  INFO 9264 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-24 19:42:48.651  INFO 9264 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-24 19:42:48.654  INFO 9264 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-24 19:43:00.819  INFO 572 --- [restartedMain] atialDataStorageSystemProjectApplication : Starting SpatialDataStorageSystemProjectApplication using Java 17 on DESKTOP-9KGPFUF with PID 572 (F:\projects\Java\spatialDataStorageSystemProject\target\classes started by Artyom in F:\projects\Java\spatialDataStorageSystemProject)
+2021-12-24 19:43:00.820  INFO 572 --- [restartedMain] atialDataStorageSystemProjectApplication : No active profile set, falling back to default profiles: default
+2021-12-24 19:43:00.860  INFO 572 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-24 19:43:00.860  INFO 572 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-24 19:43:01.348  INFO 572 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-24 19:43:01.361  INFO 572 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2021-12-24 19:43:01.899  INFO 572 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-24 19:43:01.909  INFO 572 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-24 19:43:01.909  INFO 572 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-24 19:43:01.992  INFO 572 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-24 19:43:01.993  INFO 572 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1133 ms
+2021-12-24 19:43:02.281  INFO 572 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-24 19:43:02.446  INFO 572 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-24 19:43:02.939  INFO 572 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-24 19:43:02.981  WARN 572 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-24 19:43:03.246  INFO 572 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-24 19:43:03.273  INFO 572 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-24 19:43:03.280  INFO 572 --- [restartedMain] atialDataStorageSystemProjectApplication : Started SpatialDataStorageSystemProjectApplication in 2.793 seconds (JVM running for 3.256)
+2021-12-24 19:44:03.771  INFO 572 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-24 19:44:03.771  INFO 572 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-24 19:44:03.773  INFO 572 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-12-24 19:44:03.846  INFO 572 --- [http-nio-8080-exec-1] c.e.s.MainController                     : 2021/12/24 19:43:02 Сохранить данные: точка, линия, полигон
+2021-12-24 19:44:04.758  INFO 572 --- [http-nio-8080-exec-1] c.e.s.MainController                     : 2021/12/24 19:43:02 Сохранить данные: точка, линия, полигон Объект сохранён
+2021-12-24 19:44:04.758  INFO 572 --- [http-nio-8080-exec-1] c.e.s.MainController                     : Invalid host: [Monitoring_system_address]
+2021-12-24 19:45:26.375  INFO 572 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-24 19:45:26.378  INFO 572 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-24 19:45:26.380  INFO 572 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-24 19:46:26.728  INFO 14424 --- [restartedMain] atialDataStorageSystemProjectApplication : Starting SpatialDataStorageSystemProjectApplication using Java 17 on DESKTOP-9KGPFUF with PID 14424 (F:\projects\Java\spatialDataStorageSystemProject\target\classes started by Artyom in F:\projects\Java\spatialDataStorageSystemProject)
+2021-12-24 19:46:26.728  INFO 14424 --- [restartedMain] atialDataStorageSystemProjectApplication : No active profile set, falling back to default profiles: default
+2021-12-24 19:46:26.768  INFO 14424 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-24 19:46:26.768  INFO 14424 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-24 19:46:27.255  INFO 14424 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-24 19:46:27.267  INFO 14424 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2021-12-24 19:46:27.816  INFO 14424 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-24 19:46:27.826  INFO 14424 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-24 19:46:27.826  INFO 14424 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-24 19:46:27.912  INFO 14424 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-24 19:46:27.912  INFO 14424 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1143 ms
+2021-12-24 19:46:28.200  INFO 14424 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-24 19:46:28.370  INFO 14424 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-24 19:46:28.898  INFO 14424 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-24 19:46:28.941  WARN 14424 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-24 19:46:29.223  INFO 14424 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-24 19:46:29.255  INFO 14424 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-24 19:46:29.262  INFO 14424 --- [restartedMain] atialDataStorageSystemProjectApplication : Started SpatialDataStorageSystemProjectApplication in 2.873 seconds (JVM running for 3.264)
+2021-12-24 19:46:35.723  INFO 14424 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-24 19:46:35.724  INFO 14424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-24 19:46:35.724  INFO 14424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-12-24 19:46:35.803  INFO 14424 --- [http-nio-8080-exec-1] c.e.s.MainController                     : 2021/12/24 19:46:28 Сохранить данные: точка, линия, полигон
+2021-12-24 19:46:35.863  INFO 14424 --- [http-nio-8080-exec-1] c.e.s.MainController                     : 2021/12/24 19:46:28 Сохранить данные: точка, линия, полигон Объект сохранён
+2021-12-24 19:46:36.612  INFO 14424 --- [http-nio-8080-exec-1] c.e.s.MainController                     : %s
+2021-12-24 19:51:03.940  INFO 14424 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-24 19:51:03.943  INFO 14424 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-24 19:51:03.946  INFO 14424 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-24 19:51:15.213  INFO 17620 --- [restartedMain] atialDataStorageSystemProjectApplication : Starting SpatialDataStorageSystemProjectApplication using Java 17 on DESKTOP-9KGPFUF with PID 17620 (F:\projects\Java\spatialDataStorageSystemProject\target\classes started by Artyom in F:\projects\Java\spatialDataStorageSystemProject)
+2021-12-24 19:51:15.214  INFO 17620 --- [restartedMain] atialDataStorageSystemProjectApplication : No active profile set, falling back to default profiles: default
+2021-12-24 19:51:15.255  INFO 17620 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-24 19:51:15.255  INFO 17620 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-24 19:51:15.771  INFO 17620 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-24 19:51:15.783  INFO 17620 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2021-12-24 19:51:16.332  INFO 17620 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-24 19:51:16.344  INFO 17620 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-24 19:51:16.345  INFO 17620 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-24 19:51:16.436  INFO 17620 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-24 19:51:16.436  INFO 17620 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1180 ms
+2021-12-24 19:51:16.738  INFO 17620 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-24 19:51:16.905  INFO 17620 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-24 19:51:17.439  INFO 17620 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-24 19:51:17.482  WARN 17620 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-24 19:51:17.746  INFO 17620 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-24 19:51:17.781  INFO 17620 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-24 19:51:17.788  INFO 17620 --- [restartedMain] atialDataStorageSystemProjectApplication : Started SpatialDataStorageSystemProjectApplication in 2.957 seconds (JVM running for 3.361)
+2021-12-24 19:54:17.342  INFO 17620 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-24 19:54:17.343  INFO 17620 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-24 19:54:17.343  INFO 17620 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-12-24 19:54:17.426  INFO 17620 --- [http-nio-8080-exec-2] c.e.s.MainController                     : 2021/12/24 19:51:17 Сохранить данные: точка, линия, полигон
+2021-12-24 19:54:17.485  INFO 17620 --- [http-nio-8080-exec-2] c.e.s.MainController                     : 2021/12/24 19:51:17 Сохранить данные: точка, линия, полигон Объект сохранён
+2021-12-24 19:54:17.917  INFO 17620 --- [http-nio-8080-exec-2] c.e.s.MainController                     : 405
+2021-12-24 20:59:54.519  INFO 17620 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-24 20:59:54.522  INFO 17620 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-24 20:59:54.524  INFO 17620 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
